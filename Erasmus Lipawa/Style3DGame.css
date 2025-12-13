@@ -1,0 +1,75 @@
+#container{
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+    border: 2px solid #000;
+    perspective: 600px;
+    overflow: hidden;
+}
+#world{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    /*background-color: aqua;
+    transform: translate3d(100px,100px,-1200px) rotateX(45deg);*/
+    transform-style: preserve-3d;
+}
+
+.square{
+    position: absolute;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(54, 43, 43);
+}
+
+.button{
+    position: absolute;
+    width: 900px;
+    height: 120px;
+    background-color: rgb(223, 222, 222);
+    cursor:pointer;
+}
+.button:hover{
+    background-color: rgb(72, 72, 72); //on touch    
+}
+#button1{
+    top: 110px;
+    left: 150px;
+}
+#button2{
+    bottom: 110px;
+    left: 150px;
+}
+#button3{
+    bottom: 110px;
+    left: 150px;
+}
+#button4{
+    top: 340px;
+    left: 150px;
+}
+#button5{
+    bottom: 110px;
+    left: 150px;
+}
+
+p{
+    position: absolute;
+    font-size: 60px;
+    font-family: game;
+    color: red;
+    top:50%;
+    left: 50%;
+    margin: 0px;
+    transform: translate(-50%,-50%);
+}
+@font-face {
+    font-family:game;
+    src: url("Patterns/Walls/font/Creepster-Regular.ttf");
+}
+
